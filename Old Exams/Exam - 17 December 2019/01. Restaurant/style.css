@@ -1,0 +1,54 @@
+:root {
+    --background-color-body: #fce2c7;
+    --background-color: #111111;
+    --background-color-btn: #EDB77D;
+    --color-text: #fff;
+}  
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color-body);
+    color: var(--color-text);
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    display: flex;
+    width: 60vw;
+    background-color: var(--background-color);
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.img {
+    width: 55%;
+}
+
+.content {
+    margin-top: 50px;
+    padding: 10px;
+}
+
+form > p {
+    border-bottom: 1px solid var(--color-text);
+    width: 100%;
+    font-size: small;
+    margin-top: 30px;
+    padding-bottom: 5px;
+}
+
+.btn {
+    background-color: var(--background-color-btn);
+    color: var(--color-text);
+    padding: 8px 32px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+
+

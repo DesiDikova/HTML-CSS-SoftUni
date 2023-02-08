@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    color: yellow;
+}
+
+#mainElement {
+    width: 600px;
+    height: 500px;
+    border: 1px solid #000000;
+    border-radius: 1rem;
+    margin: auto;
+    background-color: #8692da;
+
+}
+
+div a {
+    text-decoration: none;
+    text-align: center;
+    background: yellow;
+    width: 186px;
+    height: 52px;
+    display: inline-block;
+    outline: 8px;
+    border-radius: 1rem;
+    border: 1px solid #545f9e;
+    margin: 10px 50px 10px 60px;
+    font-size: 18px; 
+    color:  #8692da;  
+    font-weight: bold; 
+}
+
+div a:hover {
+    background-color: rgb(80, 80, 43);
+}
+
+div a span {
+    position: relative;
+    top: 15px;
+}

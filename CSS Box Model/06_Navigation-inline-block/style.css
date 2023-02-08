@@ -1,0 +1,31 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    max-width: 1200px;
+    margin: 70px auto;
+}
+
+.header {
+    border-bottom: 1px solid black;
+}
+
+h1 {
+    display: inline-block;
+    padding-right: 100px;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.item-links {
+    display: inline-block;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(58, 190, 58);
+    padding-right: 24px;
+}

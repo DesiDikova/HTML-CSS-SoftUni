@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+}
+
+article {
+    margin: 10px 200px;
+    max-width: 1000px;
+    line-height: 1.5; 
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+}

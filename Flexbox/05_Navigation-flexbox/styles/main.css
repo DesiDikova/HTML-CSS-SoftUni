@@ -1,0 +1,30 @@
+body {
+    margin: 4rem;
+}
+.container {
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(0,0,0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contaier__nav a{
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+    text-transform: none;
+}
+
+.contaier__nav .list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
