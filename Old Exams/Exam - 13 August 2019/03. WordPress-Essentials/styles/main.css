@@ -1,0 +1,353 @@
+:root {
+    --background-color-nav: #234465;
+    --background-color-btn: #FFA000;
+    --background-color-section: #F2F2F2;
+    --background-color-grid: #DADADA;
+
+    --color-btn: #FFFFFF;
+    --color-text: #22486C;
+    --color-nav: #8B9196;
+    --color-link: #4498D0;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    color: var(--color-text);
+}
+
+
+/* ------ NAVIGATION ------ */
+
+.header {
+    background-color: var(--background-color-nav);
+    color: var(--color-nav);
+    padding: 12px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header-content {
+    margin-bottom: 22px;
+}
+
+.header .logo.btn {
+    display: flex;
+    gap: 12px;
+}
+
+.navigation .list {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.navigation .list .itemlist a {
+    color: var(--color-nav);
+    text-decoration: none;
+}
+
+.header .btn.apply,
+.navigation .list .itemlist .btn.vhod {
+    background-color: var(--background-color-btn);
+    color: var(--color-btn);
+    padding: 4px 22px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.navigation .list .itemlist .btn.search {
+    all: unset;
+    padding: 4px;
+    cursor: pointer;
+}
+
+
+/* ------ MAIN ------ */
+
+.main {
+    font-size: 14px;
+}
+
+.main .btn {
+    padding: 12px 200px;
+}
+
+.main .btn .btn.engineering,
+.main .btn .btn.course {
+    all: unset;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main .btn .btn.engineering {
+    color: var(--background-color-btn);
+    margin-right: 12px;
+}
+
+.main .btn .btn.course {
+    color: var(--background-color-nav);
+}
+
+
+/* ------ MAIN - HEADER ------ */
+
+.header-content {
+    background: rgb(8, 18, 25);
+    background: linear-gradient(180deg, rgba(8, 18, 25, 1) 4%, rgba(60, 60, 64, 0.8631827731092436) 42%, rgba(111, 129, 172, 0) 100%);
+    color: var(--color-btn);
+    padding-top: 22px;
+}
+
+.header-content .title,
+.header-content .btn.participation {
+    text-align: center;
+}
+
+.header-content .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-content .list .itemlist i {
+    margin-right: 5px;
+}
+
+.header-content .btn-title,
+.article .btn-title {
+    all: unset;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--background-color-btn);
+    color: var(--color-btn);
+    padding: 4px 74px;
+    border-radius: 16px;
+    margin: 22px 530px 0px 530px;
+    margin-bottom: 22px;
+}
+
+
+/* ------ARTICLE ------ */
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article section {
+    background-color: var(--background-color-section);
+    margin-bottom: 20px;
+    width: 65%;
+    padding: 12px 24px 22px 24px;
+}
+
+.article .title {
+    color: var(--background-color-nav);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+
+/* ------ ПЪРВА СЕКЦИЯ ------ */
+.article .search-one .btn-title {
+    margin: 22px 28px 0px 280px;
+}
+
+.article .search-one .title::after {
+    content: "";
+    width: 10%;
+    height: 3px;
+    background: var(--background-color-btn);
+    display: block;
+    margin: 0px auto;
+}
+
+
+/* ------ ВТОРА СЕКЦИЯ ------ */
+.article .search-two .list .itemlist i {
+    color: var(--background-color-btn);
+    font-size: large;
+    margin-right: 2px;
+}
+
+.article .search-two .title::after {
+    content: "";
+    width: 38%;
+    height: 3px;
+    background: var(--background-color-btn);
+    display: block;
+    margin: 0 auto;
+}
+
+.article .search-two .list,
+.article .search-three .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 20px;
+}
+
+
+/* ------ ТРЕТА СЕКЦИЯ ------ */
+.article .search-three .list {
+    font-weight: bold;
+}
+
+.article .search-three .title::after {
+    content: "";
+    width: 6%;
+    height: 3px;
+    background: var(--background-color-btn);
+    display: block;
+    margin: 0px auto;
+}
+
+.article .search-three .list .listitem {  
+    background-color: var(--background-color-grid);
+    padding: 5px 10px;
+    border-left: 2.5px solid var(--color-text);
+}
+
+.article .search-three .list .listitem span {
+    margin-right: 15px;
+}
+
+
+/* ------ ЧЕТВЪРТА СЕКЦИЯ ------ */
+.article .search-four {
+    background-color: var(--background-color-btn);
+    color: var(--color-btn);
+}
+
+.article .search-four .title {
+    color: var(--color-btn);
+}
+
+.article .search-four .title::after {
+    content: "";
+    width: 36%;
+    height: 3px;
+    background: var(--color-btn);
+    display: block;
+    margin: 0px auto;
+}
+
+
+/* ------ ПЕТА СЕКЦИЯ ------ */
+.article .search-five div {
+    margin-bottom: 15px;
+}
+
+.article .search-five .small-title {
+    color: var(--background-color-btn);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.article .search-five .link {
+    text-decoration: none;
+    color: var(--color-link);
+    font-weight: bold;
+}
+
+.article .search-five .blue-orange {
+    box-shadow: 1px 1px 15px var(--background-color-nav);
+    margin-bottom: -26px;
+}
+
+.article .search-five .blue,
+.article .search-five .orange {
+    background-color: var(--background-color-nav);
+    color: var(--color-btn);
+    padding: 5px 12px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 150px;
+    margin-bottom: 0px;
+}
+
+.article .search-five .orange {
+   background-color: var(--background-color-btn);
+}
+
+.article .search-five .blue .small-title,
+.article .search-five .orange .small-title {
+    color: var(--color-btn);
+}
+
+
+/* ------ ШЕСТА СЕКЦИЯ ------ */
+.article .search-sex .title::after {
+    content: "";
+    width: 18%;
+    height: 3px;
+    background: var(--background-color-btn);
+    display: block;
+    margin: 0 auto;
+}
+
+.article .search-sex img {
+    width: 80px;;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.article .search-sex .conteiner {
+    display: flex;
+    gap: 15px;
+}
+
+.article .search-sex .conteiner .content .small-title {
+    color: var(--background-color-nav);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+
+/* ------FOOTER ------ */
+
+.footer {
+    background-color: var(--background-color-nav);
+    color: var(--color-btn);
+    font-size: 12px;
+    padding: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-content {
+    width: 17%;
+}
+
+.footer .footer-content li {
+    cursor: pointer;
+}
+
+.footer .list h5 {
+    color: var(--background-color-btn);
+}
+
+.footer .list .icon {
+    color: var(--color-btn);
+}
+
+.footer .list .icon i {
+    font-size: 14px;
+    margin-right: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.footer .list p {
+    color: var(--color-nav);
+}
+
