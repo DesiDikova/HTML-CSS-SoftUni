@@ -1,0 +1,176 @@
+:root {
+    --color-header: #363434;
+    --color-text: #EFEFE8;
+    --color-box-shadow: #a19891;
+    --color-big: #8d8581;
+    --background-color-section: #F2F0F3;
+    --background-color-aside: #BAB1AD;
+    --background-color-btn: #67784D;
+}
+
+h1,
+h2 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+body {
+    color: var(--color-header);
+    font-family: 'Gelasio', serif;
+}
+
+/* ------ HEADER ------ */
+.header {
+    width: 100vw;
+    height: 160vh;
+    position: relative;
+}
+
+.header .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.header .card {
+    position: absolute;
+    top: 0px;
+    border: 1px solid var(--color-box-shadow);
+    box-shadow: 4px 4px 5px var(--color-box-shadow);
+}
+
+.header .card.left {
+    top: 12%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: var(--color-header);
+    padding: 20px 50px 20px 15px;
+}
+
+.header .card.right {
+    width: 25%;
+    background: rgb(161, 152, 145);
+    background: linear-gradient(90deg, rgba(161, 152, 145, 1) 4%, rgba(188, 183, 178, 0.8099614845938375) 35%, rgba(202, 200, 198, 1) 100%);
+    color: var(--color-text);
+    top: 30%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px 15px 10px;
+    text-align: right;
+}
+
+.big {
+    margin-bottom: -30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-big);
+}
+
+
+/* ------ MAIN ------ */
+.main {
+    display: flex;
+}
+
+.hero {
+    background-color: var(--background-color-section);
+    width: 70%;
+    padding: 40px 150px;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+
+/* ------ SECTION ONE ------ */
+
+.sectiot-one .title {
+    margin-bottom: 10px;
+}
+
+.sectiot-one .content p {
+    margin-bottom: 15px;
+}
+
+.sectiot-one .content i {
+    padding: 5px;
+    border-radius: 100%;
+    background-color: var(--color-header);
+    color: var(--color-text);
+    margin-right: 5px;
+    font-size: small;
+}
+
+.sectiot-one .content b {
+    text-transform: uppercase;
+}
+
+.sectiot-one .content:last-child {
+    margin-bottom: 50px;
+}
+
+
+/* ------ SECTION TWO ------ */
+.section-two .title::after {
+    content: "";
+    width: 160%;
+    height: 1px;
+    display: block;
+    margin: 10px;
+    margin-left: -200px;
+    background-color: var(--color-header);
+}
+
+.section-two .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0px;
+}
+
+.section-two .list b {
+    font-style: italic;
+}
+
+.section-two .btn {
+    border-radius: 4px;
+    border: none;
+    color: var(--color-text);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.section-two .btn.enter {
+    background-color: var(--background-color-aside);
+    padding-right: 100px;
+    margin-right: 5px;
+}
+
+.section-two .btn.get {
+    background-color: var(--background-color-btn);
+}
+
+
+/* ------ ASIDE ------ */
+.aside {
+    background-color: var(--background-color-aside);
+    color: var(--color-text);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+    
+}
+
+.aside .asside-card h3 {
+    font-size: 55px;
+    font-weight: lighter;
+    margin-bottom: -20px;
+}
+
+.aside .asside-card p {
+    color: var(--color-header);
+    text-transform: uppercase;
+}
