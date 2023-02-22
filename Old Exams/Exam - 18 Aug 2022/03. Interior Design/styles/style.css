@@ -16,12 +16,19 @@ h2 {
 body {
     color: var(--color-header);
     font-family: 'Gelasio', serif;
+    width: 80vw;
+    height: 100vh;
+}
+
+.hero-section {
+    margin-left: 12%;
+    width: 80vw;
 }
 
 /* ------ HEADER ------ */
 .header {
-    width: 100vw;
-    height: 160vh;
+    width: 80vw;
+    height: 128vh;
     position: relative;
 }
 
@@ -36,23 +43,22 @@ body {
     position: absolute;
     top: 0px;
     border: 1px solid var(--color-box-shadow);
-    box-shadow: 4px 4px 5px var(--color-box-shadow);
+    box-shadow: 6px 4px 8px var(--color-box-shadow);
 }
 
 .header .card.left {
     top: 12%;
-    left: 10%;
+    left: 13%;
     transform: translate(-50%, -50%);
     color: var(--color-header);
     padding: 20px 50px 20px 15px;
 }
 
 .header .card.right {
-    width: 25%;
-    background: rgb(161, 152, 145);
-    background: linear-gradient(90deg, rgba(161, 152, 145, 1) 4%, rgba(188, 183, 178, 0.8099614845938375) 35%, rgba(202, 200, 198, 1) 100%);
+    width: 29%;
+    background-image: linear-gradient(to right top, #9c928b, #a39b94, #aba39d, #b2aca6, #bab5af, #bfb9b4, #c3beba, #c7c2bf, #c8c3c1, #c9c4c3, #c9c6c4, #cac7c6);
     color: var(--color-text);
-    top: 30%;
+    top: 46%;
     left: 80%;
     transform: translate(-50%, -50%);
     padding: 20px 30px 15px 10px;
@@ -161,7 +167,7 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     padding-left: 20px;
-    
+
 }
 
 .aside .asside-card h3 {
