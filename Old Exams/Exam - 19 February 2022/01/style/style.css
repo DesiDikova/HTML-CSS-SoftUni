@@ -1,0 +1,64 @@
+:root {
+    --background-color: #F6E0B5;
+    --background-color-card: #66545e;
+    --box-shadow: #a29477;
+    --color: #f6ddc3;
+}
+
+.section {
+    font-family: 'Open Sans', sans-serif;
+    height: 60vh;
+    width: 60vw;
+    background-color: var(--background-color);
+    display: flex;
+    gap: 50px;
+    margin: 130px auto;
+    align-items: center;
+    justify-content: center;
+    color: var(--background-color-card);
+}
+
+/* CARD */
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 25px;
+    width: 50%;
+}
+
+.card .img {
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .card-box {
+    background-color: var(--background-color-card);
+    border: 1px solid var(--background-color-card);
+    border-radius: 8px;
+    box-shadow: 14px 11px 20px 7px var(--box-shadow);
+    overflow: hidden;
+}
+
+.card .card-box .desc {
+    color: var(--color);
+    padding: 6px 2px;
+}
+
+/* CONTENT */
+.content .title {
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.content .listitem {
+    line-height: 2;
+}
+
+.content .list i {
+    margin-right: 8px;
+    padding: 5px;
+    border-radius: 100%;
+    background-color: var(--background-color-card);
+    color: var(--color);
+}

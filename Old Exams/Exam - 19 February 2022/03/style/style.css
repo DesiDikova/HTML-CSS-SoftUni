@@ -1,0 +1,167 @@
+:root {
+    --background-color-btn: #30000a;
+    --color: #000000;
+    --color-btn: #e6dcd7;
+    --color-text: #454446;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color);
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+}
+
+.header .logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header .list {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header .list  .listitem a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+.btn {
+    background-color: var(--background-color-btn);
+    color: var(--color-btn);
+    border: none;
+    padding: 4px 20px;
+    border-radius: 16px;
+}
+
+/* SECTION */
+.section {
+    width: 100vw;
+    height: 80vh;
+}
+
+.section .img-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section .content {
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+
+.section .content .tite {
+    line-height: 1.5;
+}
+
+.section .content .desc {
+    font-size: smaller;
+    margin-top: 25px;
+}
+
+.content .btn {
+    margin-top: 25px;
+}
+
+/* MAIN */
+.main-section {
+    width: 80vw;
+    margin: auto;
+}
+
+.main .title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main .hero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.hero .card {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.hero .card .img {
+   height: 30vw;
+   width: 100vw;
+}
+
+.hero .card .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    margin-top: -32px;
+}
+
+.hero .card .content .title{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.btn.card {
+    border: 1px solid var(--color-text);
+    border-radius: 16px;
+    background: transparent;
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--color);
+    margin-top: 50px;
+    color: var(--color-btn);
+    padding: 15px 0px;
+}
+
+.footer .section-footer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.footer .section-footer .desc {
+    font-weight: bold;
+}
+
+.three .list {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
