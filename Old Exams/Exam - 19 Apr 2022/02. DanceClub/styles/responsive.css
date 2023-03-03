@@ -1,0 +1,107 @@
+@media (max-width:800px) {
+
+    /* HEADER */
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0px;
+        gap: 5px;
+    }
+
+    header div {
+        background-image: url(../image/dancing-girl.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    header div::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background-color: black;
+        opacity: 0.2;
+    }
+
+    header div h1,
+    p {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* SECTION - trainings */
+    .trainings {
+        flex-direction: column;
+    }
+
+    .trainings div {
+        width: 50%;
+    }
+
+
+    /* SECTION - instructors */
+    .instructors-pic {
+        flex-direction: column;
+    }
+
+
+    /* SECTION - classes */
+    .classes li {
+        width: 44%;
+    }
+
+    /* SECTION - getInTouch */
+    .getInTouch {
+        flex-direction: column;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .map {
+        padding-bottom: 2.8rem
+    }
+
+    .map img {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        transform: translate(0px, 0px);
+    }
+
+    .map:after {
+        display: none;
+    }
+
+
+    /* FOOTER */
+    .site-footer .wrapper {
+        display: grid;
+        grid-template-areas:
+            'about about about'
+            'sitemap . contacts';
+    }
+
+    .site-footer .about {
+        grid-area: about;
+    }
+
+    .site-footer .sitemap {
+        grid-area: sitemap;
+    }
+
+    .site-footer .contacts {
+        grid-area: contacts;
+    }
+
+}
