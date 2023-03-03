@@ -10,45 +10,58 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
 </head>
 
 <body>
     <section class="card">
-        <div class="card__img">
-            <img class="img" src="image/cover.jpg" alt="">
-            <h6>SoftUni</h6>
-            <div>
-                <h1>Welcome to SoftUni.</h1>
-                <p>Are you ready to become a dev?</p>
-            </div>
 
-            <footer>
-                <a href="map"><i class="fas fa-globe-americas"></i></a>
-                <a href="github"><i class="fab fa-github"></i></a>
-                <a href="twitter"><i class="fab fa-twitter"></i></a>
-            </footer>
+        <!-- CARD - LEFT -->
+        <div class="left">
+            <img src="image/cover.jpg" alt="cover" class="img-cover">
+            <div class="content">
+                <h5 class="secondTitle">SoftUni</h5>
+                <div class="title">
+                    <h1 class="title">Welcome to SoftUni.</h1>
+                    <p class="desc">Are you ready to become a dev?</p>
+                </div>
+                <div class="footer">
+                    <ul role="list" class="list">
+                        <li class="item-list">
+                            <a href=""><i class="fas fa-globe-americas"></i></a>
+                        </li>
+                        <li class="item-list">
+                            <a href=""><i class="fab fa-github"></i></a>
+                        </li>
+                        <li class="item-list">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div class="card__content">
-            <form>
-                <label for="username">USERNAME</label>
-                <input type="text" name="username" id="username" placeholder="antoniyaat">
+        <!-- CARD - RIGHT -->
+        <div class="right">
+            <label for="">USERNAME </label>
+            <input type="text" placeholder="antoniyaat">
 
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" placeholder="a.atanasova@softuni.bg">
+            <label for="">EMAIL</label>
+            <input type="email" placeholder="a.atanasova@softuni.bg">
 
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" placeholder="********">
+            <label for="">PASSWORD</label>
+            <input type="text" placeholder="********">
 
-                <label for="repass">REPEAT PASSWORD</label>
-                <input type="password" name="repass" id="repass" placeholder="********">
+            <label for="">REPEAT PASSWORD </label>
+            <input type="text" placeholder="********">
 
-                <div class="card__footer">
-                    <button class="btn">REGISTER</button>
-                    <a href="I am already a ninja">I am already a ninja</a>
-                </div>
-            </form>
+            <div class="register">
+                <button class="btn">REGISTER</button>
+                <a href="" class="desc">I am already a ninja</a>
+            </div>
         </div>
     </section>
 </body>
