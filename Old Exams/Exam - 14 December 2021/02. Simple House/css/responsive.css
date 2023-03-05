@@ -1,0 +1,27 @@
+@media (max-width:600px) {
+
+    .tm-section-title {
+        font-size: 3rem;
+        margin-left: 0px;
+        font-weight: bold;
+    }
+
+    .tm-gallery-page {
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .tm-gallery {
+        margin-left: 0px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .tm-cta-section {
+        width: none;
+    }
+
+
+}
