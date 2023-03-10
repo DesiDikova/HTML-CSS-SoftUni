@@ -1,0 +1,176 @@
+:root {
+    --background-color: #efefef;
+    --color: #343434;
+    --background-color-icon: #909090;
+}
+
+main {
+    font-family: 'Raleway', sans-serif;
+    color: var(--color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 95vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 30px;
+    right: 40px;
+    gap: 10px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    line-height: 1.8;
+    width: 90%;
+}
+
+.content .info {
+    width: 38.9%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.desc {
+    font-style: italic;
+}
+
+.div.vertical {
+    height: 60px;
+    width: 1px;
+    background-color: var(--color);
+}
+
+.div.horizontal {
+    height: 1px;
+    width: 60px;
+    margin-right: 20px;
+    background-color: var(--color);
+}
+
+.div {
+    display: flex;
+    align-items: center;
+}
+
+.content .info.width {
+    width: 50%;
+}
+
+.content .icon {
+    display: flex;
+    gap: 15px;
+    color: var(--background-color);
+}
+
+.content .icon .icon-list {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    background-color: var(--background-color-icon);
+}
+
+.content .icon i {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.thumb-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.hero {
+    width: 50%;
+    right: 64px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.hero.featured {
+    bottom: auto;
+}
+
+.section .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.section .list .picture:hover {
+    transform: scale(1.5);
+    transition: transform 300ms ease-in-out;
+}
+
+.content.form {
+    flex-direction: column;
+    text-align: center;
+}
+
+.content.form .form {
+    display: grid;
+    grid-template-areas:
+        'email subject'
+        'message message'
+        'botton botton';
+    gap: 20px;
+    width: 50%;
+}
+
+.form input,
+.message,
+.btn {
+    padding: 5px;
+    background: transparent;
+    border: 1px solid var(--color);
+}
+
+.message {
+    resize: none;
+}
+
+.form .email {
+    grid-area: email;
+}
+
+.form .subject {
+    grid-area: subject;
+}
+
+.form .message {
+    grid-area: message;
+}
+
+.form .btn {
+    grid-area: botton;
+    background-color: var(--color);
+    color: var(--background-color);
+    border: none;
+}
