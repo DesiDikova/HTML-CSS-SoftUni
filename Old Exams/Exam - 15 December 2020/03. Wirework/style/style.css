@@ -1,0 +1,219 @@
+:root {
+    --color-white: #ffffff;
+    --color-div: #b2b2b2;
+    --color-green: #1b9772;
+
+    --color-text-header: #212121;
+    --background-color-orange: #e24e2a;
+    --background-color-grey: #ececec;
+    
+    --color-desc-section-one: #f5c7bc;
+
+    --color-desc-section-two: #6c6c6c;
+    --background-color-section-two: #383838;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+/* HEADER */
+.div.vertical {
+    height: 45px;
+    width: 1px;
+    background-color: var(--color-div);
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 45px;
+    justify-content: space-between;
+    color: var(--color-text-header);
+}
+
+.header .title,
+.header .list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .title .second-title {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.header .list {
+    gap: 2px;
+}
+
+.header .navigation .item-list {
+    padding: 15px;
+    background-color: var(--background-color-grey);
+}
+
+.header .navigation .item-list:nth-child(1) {
+    background-color: var(--background-color-orange);
+}
+
+.header .navigation .item-list a {
+    color: var(--color-text-header);
+    text-decoration: none;
+}
+
+.header .navigation .item-list .white {
+    color: var(--color-white);
+}
+
+
+/* SECTION - ONE */
+.one .img {
+    height: 70vh;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    background-color: var(--background-color-orange);
+}
+
+.one .desc p {
+    width: 80vw;
+    text-align: center;
+    color: var(--color-desc-section-one);
+    line-height: 1.8;
+}
+
+.one .desc p a {
+    color: var(--color-white)
+}
+
+
+
+/* SECTION - TWO */
+
+
+/* SECTION - TWO .CONTENT */
+.content {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    background-color: var(--background-color-section-two);
+}
+
+.content .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    gap: 10px;
+}
+
+.two .content .info .icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--background-color-orange);
+    position: relative;
+}
+
+.two .content .info .icon i {
+    color: var(--color-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+.two .content .info .icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--background-color-orange);
+    position: relative;
+}
+
+.content .title {
+    color: var(--color-white);
+    font-weight: normal;
+}
+
+.div.horizontal {
+    height: 1px;
+    width: 92%;
+    background-color: var(--color-desc-section-two);
+}
+
+.content .paragraph {
+    color: var(--color-desc-section-two);
+    text-align: center;
+}
+
+/* SECTION - TWO - .DESC */
+.two .desc {
+    background-color: var(--color-white);
+    height: 40vh;
+}
+
+.two .desc .title {
+    font-size: 30px;
+    color: var(--background-color-section-two);
+}
+
+.two .desc .paragraph {
+    color: var(--color-div);
+    margin-bottom: 15px;
+}
+
+.two .desc .btn {
+    all: unset;
+    padding: 10px 55px;
+    color: var(--color-white);
+    background-color: var(--color-green);  
+}
+
+
+/* SECTION - THREE */
+.three .content {
+    height: 50vh;
+}
+
+.three .content .title {
+    font-size: 22px;
+}
+
+.three .footer {
+    height: 30vh;
+    background-color: var(--color-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.three .footer p {
+    color: var(--color-div);
+}
+
+.three .footer p span {
+    color: var(--color-white);
+}
+
+
+
+
+
+
+
+
