@@ -1,0 +1,202 @@
+:root {
+    --color-title: #54546d;
+    --color-text: #565656;
+    --background-color: #54546d;
+    --color-white: #fff;
+    --background-color-btn: #9a5dc6;
+    --color-footer: #908fa5;
+}
+
+/* background: rgb(2,154,60);
+background: linear-gradient(nulldeg, rgba(2,154,60,1) 0%, rgba(44,188,99,1) 54%, rgba(75,214,128,1) 100%); */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-title);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--color-text);
+}
+
+
+/* HEADER */
+img {
+    max-width: 10%;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+
+.list {
+    display: flex;
+    gap: 10px;
+}
+
+.list a {
+    text-decoration: none;
+    color: var(--color-title);
+}
+
+/* MAIN */
+/* SECTION - HEADER */
+.section {
+    width: 89%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section.header {
+    width: 100%;
+    background-color: var(--background-color);
+    height: 40vh;
+    position: relative;
+}
+
+.calculator-icon {
+    position: absolute;
+    top: 0p;
+    top: 50%;
+    left: 1%;
+    transform: translate(-50%, -50%);
+}
+
+.header .title {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-white);
+}
+
+/* SECTION - CARDS */
+.section.cards {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px var(--color-text);
+    overflow: hidden;
+    background-color: var(--color-white);
+}
+
+.card.two {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+}
+
+.btn {
+    all: unset;
+    padding: 8px 25px;
+    background-color: var(--background-color-btn);
+    color: var(--color-white);
+    border-radius: 25px;
+    margin: 28px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: var(--color-white);
+}
+
+.footer.one {
+    flex-direction: column;
+    background: hsla(143, 97%, 31%, 1);
+    background: linear-gradient(0deg, hsla(143, 97%, 31%, 1) 0%, hsla(143, 61%, 57%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(143, 97%, 31%, 1) 0%, hsla(143, 61%, 57%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(143, 97%, 31%, 1) 0%, hsla(143, 61%, 57%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#029A3C", endColorstr="#50D583", GradientType=1);
+}
+
+.footer.two {
+    background: hsla(208, 28%, 41%, 1);
+    background: linear-gradient(0deg, hsla(208, 28%, 41%, 1) 0%, hsla(209, 53%, 60%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(208, 28%, 41%, 1) 0%, hsla(209, 53%, 60%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(208, 28%, 41%, 1) 0%, hsla(209, 53%, 60%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#4C6B87", endColorstr="#619ACF", GradientType=1);
+}
+
+.footer.three {
+    background: hsla(250, 50%, 43%, 1);
+    background: linear-gradient(0deg, hsla(250, 50%, 43%, 1) 0%, hsla(249, 63%, 69%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(250, 50%, 43%, 1) 0%, hsla(249, 63%, 69%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(250, 50%, 43%, 1) 0%, hsla(249, 63%, 69%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#4A37A5", endColorstr="#8C7DE1", GradientType=1);
+}
+
+/* SECTION - CONTENT */
+.section.content {
+    width: 100%;
+    margin-top: 220px;
+}
+
+.content-info {
+    width: 75%;
+    text-align: start;
+}
+
+.content-info .desc{
+    margin-top: 5px;
+}
+
+
+/* SECTION - FOOTER */
+.section.footer {
+    width: 100%;
+    justify-content: right;
+}
+
+.info.footer {
+    align-items: start;
+    color: var(--color-text);
+    text-align: start;
+    width: 70%;
+}
+
+h1,
+.section.content .title,
+.section.footer .title {
+    font-weight: 500;
+}
+
+.postbank-logo {
+    max-width: 100%;
+}
+
+
+/* FOOT */
+.foot {
+    background-color: var(--background-color);
+    padding: 15px;
+    text-align: center;
+    color: var(--color-footer);
+}
