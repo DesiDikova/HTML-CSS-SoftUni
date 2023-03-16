@@ -1,14 +1,13 @@
 :root {
     --color-title: #54546d;
     --color-text: #565656;
-    --background-color: #54546d;
     --color-white: #fff;
-    --background-color-btn: #9a5dc6;
     --color-footer: #908fa5;
+    --background-color: #54546d;
+    --background-color-btn: #9a5dc6;
+    --background-color-odd: #e6e6e6;
+    --background-color-even: #f8f8f8;
 }
-
-/* background: rgb(2,154,60);
-background: linear-gradient(nulldeg, rgba(2,154,60,1) 0%, rgba(44,188,99,1) 54%, rgba(75,214,128,1) 100%); */
 
 h1,
 h2,
@@ -153,19 +152,61 @@ section.header {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#4A37A5", endColorstr="#8C7DE1", GradientType=1);
 }
 
+.div-vertical {
+    height: 60px;
+    width: 1px;
+    background-color: var(--color-white);
+}
+
 /* SECTION - CONTENT */
 .section.content {
     width: 100%;
     margin-top: 220px;
+    flex-direction: column;
 }
 
-.content-info {
+.content {
     width: 75%;
     text-align: start;
 }
 
+.content.info {
+    padding: 0px;
+}
+
 .content-info .desc{
     margin-top: 5px;
+}
+
+.content.table {
+    border-top-left-radius: 16px;
+    overflow: hidden;
+    border-bottom-left-radius: 16px;
+}
+
+.table-row {
+    display: flex;
+    padding: 20px;
+}
+
+.table-row p {
+    width: 70%;
+}
+
+.table-row .check {
+    margin-right: 10rem;
+}
+
+.table-row img {
+    width: 15px;
+}
+
+.table-row:nth-child(odd) {
+    background-color: var(--background-color-odd);
+}
+
+.table-row:nth-child(even) {
+    background-color: var(--background-color-even);
 }
 
 
@@ -189,7 +230,7 @@ h1,
 }
 
 .postbank-logo {
-    max-width: 100%;
+    max-width: 90%;
 }
 
 
