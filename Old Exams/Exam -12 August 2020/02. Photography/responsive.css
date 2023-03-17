@@ -1,0 +1,36 @@
+@media (max-width: 600px) {
+
+    header .avatar img {
+        width: 20em;
+    }
+
+    h1 {
+        font-size: 2.75em;
+    }
+
+    .icon.style2:before {
+        font-size: 3em;
+    }
+
+    .thumbnails {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .thumbnails > div {
+        width: 100%;
+    }
+
+    .thumbnails a {
+        height: 414.42px
+    }
+
+    .thumbnails a img {
+        height: 353.78px
+    }
+
+    footer {
+        font-size: 25px;
+    }
+    
+}
